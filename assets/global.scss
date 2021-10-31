@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+$background-color: #F3F3F3;
+$primary: #F5A201;
+$light: #656565;
+$container: 1200px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: $background-color;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+  max-width: $container;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: $light;
+}
+
+.highlight {
+ color: $primary;
+}
