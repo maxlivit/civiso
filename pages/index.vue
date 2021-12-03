@@ -1,5 +1,20 @@
 <template>
   <div>
+
+    <div class="main-section">
+    <div class="section">
+      <div class="section-left">
+        <img src="/images/main.png" />
+        <div class="arrow bounce"></div>
+      </div>
+
+      <div class="section-right">
+        <p>At <b>civiso</b>, we are bringing it one step closer by bridging students' unique passions with civic
+        and humanitarian engagement through nonprofit incubation, project development, and civil discourse.
+        </p>
+      </div>
+    </div>
+      </div>
     <div class="section">
       <div class="section-heading">
         <h1>Our Departments.</h1>
@@ -15,7 +30,7 @@
             </div>
           </div>
 
-            <div>
+            <div class="image-containers">
               <div class="image-comp">
               <img src="images/department/third.png" />
               </div>
@@ -102,5 +117,64 @@ export default {
     align-content: flex-start;
   }
 }
+
+.main-section {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+    height: 100%;
+
+    .section-left img {
+      height: 210px;
+    }
+
+    .section-right {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      padding: 0 1.5rem;
+
+      p {
+        line-height: 1.3;
+       font-weight: 300;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+ .arrow
+ {
+   position: relative;
+   bottom: -4rem;
+   left: 50%;
+   margin-left:-20px;
+   width: 40px;
+   height: 40px;
+
+   background-image: url('static/images/arrow.png');
+   background-repeat: no-repeat;
+   background-size: contain;
+ }
+
+ .bounce {
+   animation: bounce 2s infinite;
+ }
+
+ @keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {
+     transform: translateY(0);
+   }
+   40% {
+     transform: translateY(-30px);
+   }
+   60% {
+     transform: translateY(-15px);
+   }
+ }
 
 </style>
