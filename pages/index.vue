@@ -22,20 +22,52 @@
       </div>
         <div class="department">
           <div class="image-containers">
-            <div class="image-comp">
+            <div class="image-comp spacing">
               <img src="images/department/first.png" />
+              <div class="card">
+                <h2>Projects</h2>
+                <p>
+                  We pair our members with industry professionals and give them the means to research the issues
+                  that they feel strongly about. With the team at Civiso, you can learn data analysis, data
+                  visualization, research protocols, advance policy work, and much more.
+                </p>
+              </div>
             </div>
             <div class="image-comp">
-              <img src="images/department/second.png" />
+              <img src="images/department/first.png" />
+              <div class="card">
+                <h2>Growth & Marketing</h2>
+                <p>
+                  Our Social Media team is actively involved with all platforms including Instagram, TikTok, & others!
+                  We design, produce, & curate content meant to incite change, & make research infographics that
+                  put injustice into perspective.
+                </p>
+              </div>
             </div>
           </div>
 
             <div class="image-containers">
-              <div class="image-comp">
+              <div class="image-comp spacing">
               <img src="images/department/third.png" />
+                <div class="card">
+                  <h2>Journalism</h2>
+                  <p>
+                    Our professional partnerships in many industries allow us to have access to platforms for civil
+                    discourse & debate. We aim to aid undeserving communities, not intrude onto them.
+                    For this reason, Civiso is intent on constantly educating & informing its members.
+                  </p>
+                </div>
               </div>
               <div class="image-comp">
               <img src="images/department/third.png" />
+                <div class="card">
+                  <h2>Journalism</h2>
+                  <p>
+                    Our professional partnerships in many industries allow us to have access to platforms for civil
+                    discourse & debate. We aim to aid undeserving communities, not intrude onto them.
+                    For this reason, Civiso is intent on constantly educating & informing its members.
+                  </p>
+                </div>
                 </div>
             </div>
         </div>
@@ -69,7 +101,7 @@
         <h1>Civiso:  <span class="highlight">Toks.</span></h1>
         <p>Raising awareness in 60 seconds or less.</p>
       </div>
-
+      <br />
     </div>
   </div>
 </template>
@@ -99,6 +131,7 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 
   img {
@@ -176,5 +209,44 @@ export default {
      transform: translateY(-15px);
    }
  }
+
+ .image-containers {
+   margin: auto;
+ }
+
+.spacing {
+  margin-bottom: 4rem;
+}
+
+.card {
+  background: rgba(243, 243, 243, 1);
+  width: 300px;
+  border-top: 4px solid #F5A201;
+  border-bottom: 4px solid #F5A201;
+  padding: 2rem 1rem;
+  text-align: center;
+
+
+  h2 {
+    color: #F5A201;
+    padding-bottom: 1rem;
+  }
+}
+
+.image-comp {
+  position: relative;
+
+  .card {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: 0.3s;
+
+    &:hover {
+      left: 40px;
+      top: -10px
+    }
+  }
+}
 
 </style>
