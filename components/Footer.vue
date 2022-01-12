@@ -1,34 +1,32 @@
 <template>
   <footer class="footer-container">
-    <div class="container c-form ">
-    <div class="form">
+    <div class="container c-form">
+      <div class="form">
+        <div class="form-container row">
+          <div class="newsletter"></div>
 
-      <div class="form-container row">
-        <div class="newsletter"></div>
+          <div class="newsletter">
+            <h1 class="newsletter-text">
+              <span class="orange">&#160;</span>
+              Join our newsletter &#160;
+            </h1>
 
-        <div class="newsletter">
-        <h1 class="newsletter-text">
-          <span class="orange">&#160;</span>
-          Join our newsletter &#160;
-        </h1>
-
-          <input class="email-input" placeholder="Email"/>
+            <input class="email-input" placeholder="Email" />
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </footer>
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
 <style lang="scss">
 .footer-container {
   display: flex;
   justify-content: center;
-  background: url('/images/footer-img.jpg') no-repeat center center;
+  background: url("/images/footer-img.jpg") no-repeat center center;
   height: 30vw;
   background-size: 100% auto;
 }
@@ -53,14 +51,14 @@ export default {
     border: none;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     display: inline-block;
     width: 60%;
   }
 }
 
 .orange {
- background-color: #F5A201;
+  background-color: #f5a201;
 }
 .newsletter {
   display: flex;
@@ -73,6 +71,4 @@ export default {
 .c-form {
   width: 100%;
 }
-
-
 </style>

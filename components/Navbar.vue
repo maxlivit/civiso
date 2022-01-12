@@ -1,31 +1,34 @@
 <template>
-<nav>
-  <div class="navbar container">
-  <img src="images/logo.png" alt="civiso logo"/>
-  <ul class="menu">
-    <li>mission.</li>
-    <li>team.</li>
-    <li>contact.</li>
-    <li class="highlight">join.</li>
-  </ul>
-  </div>
-</nav>
+  <nav>
+    <div class="navbar container">
+      <NuxtLink to="/">
+        <img src="images/logo.png" alt="civiso logo" />
+      </NuxtLink>
+      <ul class="menu">
+        <li><NuxtLink to="/mission">mission.</NuxtLink></li>
+        <li><NuxtLink to="/mission">team.</NuxtLink></li>
+        <li><NuxtLink to="/mission">contact.</NuxtLink></li>
+        <li><NuxtLink to="/mission" class="highlight">join.</NuxtLink></li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
 export default {
- name: 'Navbar'
-}
+  name: "Navbar",
+};
 </script>
 
 <style lang="scss">
-@import '../assets/global.scss';
+@import "../assets/global.scss";
 
 nav {
   position: fixed;
   top: 0;
   width: 100%;
   background: rgba($background-color, 0.95);
+  z-index: 1;
 }
 
 .navbar {
@@ -52,5 +55,4 @@ nav {
     margin: 0 1rem;
   }
 }
-
 </style>
