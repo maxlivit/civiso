@@ -8,7 +8,7 @@
         <li><NuxtLink to="/mission">mission.</NuxtLink></li>
         <li><NuxtLink to="/mission">team.</NuxtLink></li>
         <li><NuxtLink to="/mission">contact.</NuxtLink></li>
-        <li><NuxtLink to="/mission" class="highlight">join.</NuxtLink></li>
+        <li><NuxtLink to="/mission" id="highlight">join.</NuxtLink></li>
       </ul>
     </div>
   </nav>
@@ -53,6 +53,10 @@ nav {
     font-weight: 700;
     font-size: 1.1rem;
     margin: 0 1rem;
+  }
+  a {
+    color: black;
+    text-decoration: none;
   }
 }
 </style>
